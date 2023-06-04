@@ -1,0 +1,27 @@
+{
+  "name": "void-client",
+  "version": "1.0.0",
+  "description": "Empty discord.js TypeScript bot template",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node --transpile-only ./src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts --trace-warnings",
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/glob": "^8.0.1",
+    "@types/node": "^18.11.18",
+    "discord.js": "^14.8.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@voidpkg/console": "^1.0.1",
+    "@voidpkg/social-alert": "^1.0.2",
+    "fix-esm": "^1.0.1",
+    "glob": "^8.1.0"
+  }
+}
