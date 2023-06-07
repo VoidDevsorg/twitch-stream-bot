@@ -1,12 +1,12 @@
-import { Consoler } from '@voidpkg/console';
+import { Consoler } from "@voidpkg/console";
 new Consoler({
-    title: 'VoidClient'
+    title: "VoidClient",
 });
 
 require("fix-esm").register();
 
 // Client Run
-import VoidClient from './client';
+import VoidClient from "./client";
 const client = new VoidClient();
 client.run();
 

@@ -1,6 +1,6 @@
-import { PermissionFlags, CommandInteraction } from 'discord.js';
-import Client from '../client';
-import config from '../config';
+import { PermissionFlags, CommandInteraction } from "discord.js";
+import Client from "../client";
+import config from "../config";
 
 interface SubCommand {
     type: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
@@ -8,7 +8,7 @@ interface SubCommand {
     description: string;
     required?: boolean;
     choices?: { name: string; value: any }[];
-};
+}
 
 export interface ICommand {
     name: string;
@@ -17,5 +17,8 @@ export interface ICommand {
     only_developer?: boolean;
     cooldown?: number;
     permissions?: (bit: PermissionFlags) => bigint[];
-    run: (client: Client, interaction: CommandInteraction) => Promise<any> | any;
-};
+    run: (
+        client: Client,
+        interaction: CommandInteraction
+    ) => Promise<any> | any;
+}
