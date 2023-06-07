@@ -1,6 +1,6 @@
 import { Consoler } from "@voidpkg/console";
 new Consoler({
-  title: "VoidClient",
+    title: "VoidClient",
 });
 
 require("fix-esm").register();
